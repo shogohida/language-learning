@@ -6,27 +6,39 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+puts "Deleting words"
+Word.destroy_all
+puts "Deleting languages"
+Language.destroy_all
+puts "Deleting users"
+User.destroy_all
 
-# Language.destroy_all
-# User.destroy_all
-
-User.create!(
+@shogo = User.create!(
   name: "Shogo",
   email: "shogo@gmail.com",
   password: "123456"
 )
 
-Language.create!(
-  name: "English"
+@english = Language.create!(
+  name: "English",
+  user: @shogo
 )
 
 Language.create!(
-  name: "Spanish"
+  name: "Spanish",
+  user: @shogo
 )
 
 Language.create!(
-  name: "Japanese"
+  name: "Japanese",
+  user: @shogo
 )
 
+30.times do
+  Word.create!(
+    name: Faker::Verb.base,
+    language: @english
+  )
+end
 
 # User faker to add words etc

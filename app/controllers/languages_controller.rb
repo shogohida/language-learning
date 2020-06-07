@@ -1,4 +1,4 @@
-class GrammersController < ApplicationController
+class LanguagesController < ApplicationController
   def index
   end
 
@@ -14,7 +14,8 @@ class GrammersController < ApplicationController
 
   private
 
-  def grammer_params
+  def language_params
 
   end
 end
+
