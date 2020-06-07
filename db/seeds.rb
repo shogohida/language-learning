@@ -5,3 +5,28 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+# Language.destroy_all
+# User.destroy_all
+
+User.create!(
+  name: "Shogo",
+  email: "shogo@gmail.com",
+  password: "123456"
+)
+
+Language.create!(
+  name: "English"
+)
+
+Language.create!(
+  name: "Spanish"
+)
+
+Language.create!(
+  name: "Japanese"
+)
+
+
+# User faker to add words etc
