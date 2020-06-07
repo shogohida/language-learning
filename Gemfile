@@ -37,6 +37,10 @@ gem 'google-api-client'
 gem 'faker'
 gem 'htmlbeautifier'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 4.0.0'
+end
+
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
