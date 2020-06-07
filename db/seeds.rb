@@ -14,23 +14,23 @@ puts "Deleting users"
 User.destroy_all
 
 @shogo = User.create!(
-  name: "Shogo",
+  name: "翔吾",
   email: "shogo@gmail.com",
   password: "123456"
 )
 
 @english = Language.create!(
-  name: "English",
+  name: "英語",
   user: @shogo
 )
 
 Language.create!(
-  name: "Spanish",
+  name: "スペイン語",
   user: @shogo
 )
 
 Language.create!(
-  name: "Japanese",
+  name: "日本語",
   user: @shogo
 )
 
