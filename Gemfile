@@ -36,6 +36,9 @@ gem 'nokogiri'
 gem 'google-api-client'
 gem 'faker'
 gem 'htmlbeautifier'
+gem "bing_translator", "~> 6.0.0"
+gem 'ice_cube'
+gem "simple_calendar", "~> 2.0"
 
 group :development, :test do
   gem 'rspec-rails', '~> 4.0.0'
